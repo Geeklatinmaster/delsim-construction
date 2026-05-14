@@ -1,16 +1,31 @@
 import React from "react";
-import { HardHat, ClipboardCheck, ArrowRight } from "lucide-react";
+import { Warehouse, Home, Building2, ClipboardCheck, ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
+import customHomeImg from "../assets/images/House-construction-florida.webp";
+import industrialWarehouseImg from "../assets/images/Industrial-Warehouse-Oarlando.webp";
+import corporateOfficesImg from "../assets/images/Corporste-offices-florida.webp";
 
 const Services = () => {
   const containerClass = "max-w-[1600px] mx-auto px-6 md:px-12";
   
   const services = [
     {
-      title: "Construction",
-      desc: "Comprehensive commercial and residential construction services. We bring your vision to life from blueprint to final build with unmatched quality.",
-      icon: <HardHat size={40} className="text-orange-500" />,
-      image: "https://images.unsplash.com/photo-1541888086925-ebbc3767f400?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      title: "Industrial Warehouses",
+      desc: "Design and construction of high-capacity industrial buildings and logistics warehouses tailored for endurance.",
+      icon: <Warehouse size={40} className="text-orange-500" />,
+      image: industrialWarehouseImg,
+    },
+    {
+      title: "Custom Homes",
+      desc: "Modern residential construction. We take your dream home from blueprints to turnkey delivery.",
+      icon: <Home size={40} className="text-orange-500" />,
+      image: customHomeImg,
+    },
+    {
+      title: "Corporate Offices",
+      desc: "Functional and modern workspaces that inspire productivity and reflect your company's identity.",
+      icon: <Building2 size={40} className="text-orange-500" />,
+      image: corporateOfficesImg,
     },
     {
       title: "Permits",
@@ -34,7 +49,7 @@ const Services = () => {
             <div className="w-20 h-1 bg-orange-500 mx-auto mt-4" />
           </Reveal>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
           {services.map((service, index) => (
             <Reveal key={index} delay={index * 200}>
               <div
