@@ -1,6 +1,6 @@
 import React from "react";
 import { Reveal } from "./Reveal";
-import heroImg from "../assets/images/delsim-construction-general-contractor-orlando-hero.webp";
+import heroImg from "../assets/EstructuraAlmacen_Hero.JPG";
 
 const Hero = () => {
   const containerClass = "max-w-[1600px] mx-auto px-6 md:px-12";
