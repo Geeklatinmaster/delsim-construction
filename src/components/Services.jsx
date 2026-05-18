@@ -2,8 +2,8 @@ import React from "react";
 import { Warehouse, Home, Building2, ClipboardCheck, ArrowRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import customHomeImg from "../assets/images/House-construction-florida.webp";
-import industrialWarehouseImg from "../assets/images/Industrial-Warehouse-Oarlando.webp";
-import corporateOfficesImg from "../assets/images/Corporste-offices-florida.webp";
+import industrialWarehouseImg from "../assets/images/Industrial-Warehouse-Oarlando.JPG";
+import corporateOfficesImg from "../assets/images/Office_DELSIM_constructution.jpeg";
 
 const Services = () => {
   const containerClass = "max-w-[1600px] mx-auto px-6 md:px-12";
